@@ -1,0 +1,4 @@
+## create 
+ssh  -o StrictHostKeyChecking=no me@IPWAN -J   me@IPWAN   -L  8086:LocalIP:8080  -f -N -M -S ~/.ssh-me-tunel
+##delete 
+ssh -S ~/.ssh-me-tunel  -O exit  IPWAN 
